@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jonathan Moruno | Software Engineer</title>
+    <title>Jonathan Moruno Terán | Software Engineer</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
@@ -15,62 +15,92 @@
 </head>
 <body class="p-6 md:p-12 lg:p-24 max-w-5xl mx-auto">
 
-    <header class="mb-16">
-        <h1 class="text-5xl font-extrabold mb-4">Jonathan <span class="gradient-text">Moruno Terán</span></h1>
-        <p class="text-xl text-slate-400 mb-6">Software Engineer | Backend Developer | AI Integrator</p>
-        <div class="flex gap-4 text-2xl">
-            <a href="https://github.com/JonathanELPRO" target="_blank" class="hover:text-sky-400"><i class="fab fa-github"></i></a>
-            <a href="https://linkedin.com/in/jonathan-moruno" target="_blank" class="hover:text-sky-400"><i class="fab fa-linkedin"></i></a>
-            <a href="mailto:moruno.teran.jonathan@gmail.com" class="hover:text-sky-400"><i class="fas fa-envelope"></i></a>
+    <header class="mb-16 flex flex-col md:flex-row md:justify-between md:items-start gap-6">
+        <div>
+            <h1 class="text-5xl font-extrabold mb-4">Jonathan <span class="gradient-text">Moruno Terán</span></h1>
+            <p class="text-xl text-slate-400 mb-6">Software Engineer | Backend Developer | AI Integrator</p>
+            <p class="text-slate-500 mb-4"><i class="fas fa-map-marker-alt mr-2"></i> Cochabamba, Bolivia</p>
+            <div class="flex gap-4 text-3xl">
+                <a href="https://github.com/JonathanELPRO" target="_blank" class="hover:text-sky-400" title="GitHub"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/jonathan-moruno-terán-4257373b8/" target="_blank" class="hover:text-sky-400" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                <a href="mailto:moruno.teran.jonathan@gmail.com" class="hover:text-sky-400" title="Enviar Correo"><i class="fas fa-envelope"></i></a>
+            </div>
         </div>
+        <a href="https://github.com/JonathanELPRO/JonathanELPRO.github.io/raw/main/CV_Jonathan_Moruno.pdf" download class="inline-block bg-sky-600 hover:bg-sky-500 text-white font-bold py-3 px-8 rounded-lg transition text-center">
+            <i class="fas fa-download mr-2"></i> Descargar CV
+        </a>
     </header>
 
     <section class="mb-16">
         <h2 class="text-2xl font-bold mb-4 border-b border-slate-700 pb-2">Sobre mí</h2>
         <p class="text-lg text-slate-300 leading-relaxed">
-            Ingeniero de Sistemas con 5 años de experiencia técnica. Especializado en la optimización de bases de datos 
-            <strong>Oracle/SQL</strong> e implementación de soluciones de IA mediante arquitecturas <strong>RAG</strong>. 
-            Enfocado en crear sistemas escalables y eficientes bajo metodología Scrum.
+            Software Engineer con 5 años de experiencia técnica en desarrollo Backend y arquitectura de software. 
+            Especializado en optimización de SQL e implementación de soluciones de IA mediante arquitecturas 
+            <strong>RAG (Text-to-SQL)</strong>. Lideré la automatización de consultas bajo metodología Scrum, incrementando la 
+            eficiencia operativa y la escalabilidad de sistemas de datos críticos. Enfocado en la creación de soluciones eficientes.
         </p>
     </section>
 
     <section class="mb-16">
         <h2 class="text-2xl font-bold mb-6 border-b border-slate-700 pb-2">Technical Stack</h2>
-        <div class="flex flex-wrap gap-3">
-            <span class="px-4 py-2 rounded-full bg-slate-800 text-sky-400 font-mono border border-sky-900">Python</span>
-            <span class="px-4 py-2 rounded-full bg-slate-800 text-sky-400 font-mono border border-sky-900">Oracle SQL</span>
-            <span class="px-4 py-2 rounded-full bg-slate-800 text-sky-400 font-mono border border-sky-900">JavaScript</span>
-            <span class="px-4 py-2 rounded-full bg-slate-800 text-sky-400 font-mono border border-sky-900">RAG (AI Frameworks)</span>
-            <span class="px-4 py-2 rounded-full bg-slate-800 text-sky-400 font-mono border border-sky-900">Docker</span>
-            <span class="px-4 py-2 rounded-full bg-slate-800 text-sky-400 font-mono border border-sky-900">JMeter</span>
-            <span class="px-4 py-2 rounded-full bg-slate-800 text-sky-400 font-mono border border-sky-900">AWS</span>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div class="card p-6 rounded-lg">
+                <h4 class="text-sky-400 font-bold mb-3">Core Tech & AI</h4>
+                <div class="flex flex-wrap gap-2 text-sm">
+                    <span class="px-3 py-1.5 rounded bg-slate-800 text-sky-400 font-mono border border-sky-900">Python</span>
+                    <span class="px-3 py-1.5 rounded bg-slate-800 text-sky-400 font-mono border border-sky-900">Oracle SQL</span>
+                    <span class="px-3 py-1.5 rounded bg-slate-800 text-sky-400 font-mono border border-sky-900">JavaScript (Node.js)</span>
+                    <span class="px-3 py-1.5 rounded bg-slate-800 text-sky-400 font-mono border border-sky-900">RAG (AI Frameworks)</span>
+                    <span class="px-3 py-1.5 rounded bg-slate-800 text-sky-400 font-mono border border-sky-900">Vanna.ai</span>
+                    <span class="px-3 py-1.5 rounded bg-slate-800 text-sky-400 font-mono border border-sky-900">DB-GPT</span>
+                </div>
+            </div>
+            <div class="card p-6 rounded-lg">
+                <h4 class="text-sky-400 font-bold mb-3">Tools & DevOps</h4>
+                <div class="flex flex-wrap gap-2 text-sm">
+                    <span class="px-3 py-1.5 rounded bg-slate-800 text-sky-400 font-mono border border-sky-900">Git / GitHub</span>
+                    <span class="px-3 py-1.5 rounded bg-slate-800 text-sky-400 font-mono border border-sky-900">Docker</span>
+                    <span class="px-3 py-1.5 rounded bg-slate-800 text-sky-400 font-mono border border-sky-900">JMeter</span>
+                    <span class="px-3 py-1.5 rounded bg-slate-800 text-sky-400 font-mono border border-sky-900">AWS</span>
+                    <span class="px-3 py-1.5 rounded bg-slate-800 text-sky-400 font-mono border border-sky-900">Scrum / Kanban</span>
+                    <span class="px-3 py-1.5 rounded bg-slate-800 text-sky-400 font-mono border border-sky-900">System Architecture</span>
+                </div>
+            </div>
         </div>
     </section>
 
     <section class="mb-16">
         <h2 class="text-2xl font-bold mb-6 border-b border-slate-700 pb-2">Proyecto Destacado</h2>
-        <div class="card p-8 rounded-xl">
+        <div class="card p-8 rounded-xl relative">
             <div class="flex justify-between items-start mb-4">
                 <h3 class="text-2xl font-bold text-sky-400">Agentic IA - UTSI (UCB)</h3>
-                <span class="text-xs bg-sky-900 text-sky-200 px-2 py-1 rounded">2026</span>
+                <span class="text-xs bg-sky-900 text-sky-200 px-3 py-1 rounded">2026 - Presente</span>
             </div>
-            <p class="text-slate-400 mb-6">
-                Sistema agéntico para la generación y verificación de calidad de consultas SQL mediante enfoque RAG. 
-                Desarrollado para automatizar procesos en la plataforma SIAAN.
+            <p class="text-slate-400 mb-6 leading-relaxed">
+                Sistema agéntico para la generación y verificación de calidad de consultas SQL mediante un enfoque RAG avanzado. 
+                Desarrollado para automatizar procesos críticos de consulta en la plataforma SIAAN.
             </p>
-            <ul class="list-disc list-inside text-slate-300 space-y-2 mb-6">
-                <li>Reducción del 40% en tiempo de codificación manual de consultas.</li>
+            <h5 class="text-sky-300 font-bold mb-3">Impacto Cuantificable:</h5>
+            <ul class="list-disc list-inside text-slate-300 space-y-2 mb-8">
+                <li>Reducción del <strong class="text-sky-400">40%</strong> en el tiempo de codificación manual de consultas.</li>
                 <li>Implementación de gestión de Skills mediante reglas expertas inyectadas por archivos de texto.</li>
-                <li>Reducción del 30% en latencia de base de datos mediante vistas persistentes.</li>
+                <li>Reducción del <strong class="text-sky-400">30%</strong> en latencia de base de datos mediante vistas persistentes.</li>
+                <li>Automatización de pruebas de rendimiento con JMeter, validando la estabilidad ante cargas críticas.</li>
             </ul>
-            <a href="https://github.com/JonathanELPRO/AgenticIA" target="_blank" class="inline-block bg-sky-600 hover:bg-sky-500 text-white font-bold py-2 px-6 rounded-lg transition">
-                Ver Repositorio <i class="fas fa-external-link-alt ml-2"></i>
-            </a>
+            <div class="flex gap-4">
+                <a href="https://github.com/JonathanELPRO/AgenticIA" target="_blank" class="inline-block bg-sky-600 hover:bg-sky-500 text-white font-bold py-2 px-6 rounded-lg transition">
+                    Ver Repositorio <i class="fas fa-external-link-alt ml-2"></i>
+                </a>
+                <a href="#" class="inline-block border border-sky-600 hover:bg-sky-900/30 text-sky-300 font-bold py-2 px-6 rounded-lg transition">
+                    Ver Arquitectura <i class="fas fa-project-diagram ml-2"></i>
+                </a>
+            </div>
         </div>
     </section>
 
-    <footer class="text-center text-slate-500 text-sm mt-24">
-        <p>© 2026 Jonathan Moruno. Hecho con <i class="fas fa-bolt text-yellow-400"></i> y Gemini.</p>
+    <footer class="text-center text-slate-500 text-sm mt-24 border-t border-slate-800 pt-10">
+        <p>© 2026 Jonathan Moruno Terán. Todos los derechos reservados.</p>
+        <p class="mt-1">Backend Ingenuity with <i class="fas fa-heart text-sky-500"></i> from Cochabamba.</p>
     </footer>
 
 </body>
