@@ -11,7 +11,7 @@
         .gradient-text { background: linear-gradient(90deg, #38bdf8, #818cf8); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
         .card { background: #1e293b; border: 1px solid #334155; transition: transform 0.3s ease; }
         .card:hover { transform: translateY(-5px); border-color: #38bdf8; }
-        .btn-disabled { background-color: #334155; color: #64748b; cursor: not-allowed; border: 1px solid #475569; }
+        .btn-disabled { background-color: #1e293b; color: #64748b; cursor: not-allowed; border: 1px solid #334155; opacity: 0.6; }
     </style>
 </head>
 <body class="p-6 md:p-12 lg:p-24 max-w-5xl mx-auto">
@@ -19,15 +19,15 @@
     <header class="mb-16 flex flex-col md:flex-row md:justify-between md:items-start gap-6">
         <div>
             <h1 class="text-5xl font-extrabold mb-4">Jonathan <span class="gradient-text">Moruno Terán</span></h1>
-            <p class="text-xl text-slate-400 mb-6">Software Engineer | Backend Developer | AI Integrator [cite: 2, 3]</p>
-            <p class="text-slate-500 mb-4"><i class="fas fa-map-marker-alt mr-2"></i> Cochabamba, Bolivia [cite: 1]</p>
+            <p class="text-xl text-slate-400 mb-6">Software Engineer | Backend Developer | AI Integrator</p>
+            <p class="text-slate-500 mb-4"><i class="fas fa-map-marker-alt mr-2"></i> Cochabamba, Bolivia</p>
             <div class="flex gap-4 text-3xl">
-                <a href="https://github.com/JonathanELPRO" target="_blank" class="hover:text-sky-400" title="GitHub"><i class="fab fa-github"></i> [cite: 6]</a>
-                <a href="https://www.linkedin.com/in/jonathan-moruno-terán-4257373b8/" target="_blank" class="hover:text-sky-400" title="LinkedIn"><i class="fab fa-linkedin"></i> [cite: 5]</a>
-                <a href="mailto:moruno.teran.jonathan@gmail.com" class="hover:text-sky-400" title="Enviar Correo"><i class="fas fa-envelope"></i> [cite: 4]</a>
+                <a href="https://github.com/JonathanELPRO" target="_blank" class="hover:text-sky-400" title="GitHub"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/jonathan-moruno-terán-4257373b8/" target="_blank" class="hover:text-sky-400" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                <a href="mailto:moruno.teran.jonathan@gmail.com" class="hover:text-sky-400" title="Enviar Correo"><i class="fas fa-envelope"></i></a>
             </div>
         </div>
-        <a href="CV.pdf" download="CV_Jonathan_Moruno.pdf" class="inline-block bg-sky-600 hover:bg-sky-500 text-white font-bold py-3 px-8 rounded-lg transition text-center">
+        <a href="CV.pdf" download="CV_Jonathan_Moruno.pdf" class="inline-block bg-sky-600 hover:bg-sky-500 text-white font-bold py-3 px-8 rounded-lg transition text-center shadow-lg shadow-sky-900/20">
             <i class="fas fa-download mr-2"></i> Descargar CV
         </a>
     </header>
@@ -36,7 +36,7 @@
         <h2 class="text-2xl font-bold mb-4 border-b border-slate-700 pb-2">Sobre mí</h2>
         <p class="text-lg text-slate-300 leading-relaxed">
             Estudiante de Ingeniería de Sistemas con 5 años de experiencia en desarrollo Backend y arquitectura de software[cite: 9]. 
-            Especializado en optimización de SQL e implementación de soluciones de IA (Text-to-SQL) con Javascript, OracleSQL y frameworks de soporte RAG[cite: 10]. 
+            Especializado en optimización de SQL e implementación de soluciones de IA (Text-to-SQL) con JavaScript, OracleSQL y frameworks de soporte RAG[cite: 10]. 
             He liderado la automatización de consultas bajo metodología Scrum, incrementando la eficiencia operativa y la escalabilidad de la base de datos de la UCB[cite: 11].
         </p>
     </section>
@@ -45,23 +45,23 @@
         <h2 class="text-2xl font-bold mb-6 border-b border-slate-700 pb-2">Technical Stack</h2>
         <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div class="card p-6 rounded-lg">
-                <h4 class="text-sky-400 font-bold mb-3">Core Tech & AI</h4>
+                <h4 class="text-sky-400 font-bold mb-3">Languages & Frameworks</h4>
                 <div class="flex flex-wrap gap-2 text-sm">
-                    <span class="px-3 py-1.5 rounded bg-slate-800 text-sky-400 font-mono border border-sky-900">Python [cite: 13]</span>
-                    <span class="px-3 py-1.5 rounded bg-slate-800 text-sky-400 font-mono border border-sky-900">Oracle SQL [cite: 14]</span>
-                    <span class="px-3 py-1.5 rounded bg-slate-800 text-sky-400 font-mono border border-sky-900">JavaScript [cite: 13]</span>
-                    <span class="px-3 py-1.5 rounded bg-slate-800 text-sky-400 font-mono border border-sky-900">NodeJS [cite: 13]</span>
-                    <span class="px-3 py-1.5 rounded bg-slate-800 text-sky-400 font-mono border border-sky-900">Oracle [cite: 14]</span>
+                    <span class="px-3 py-1.5 rounded bg-slate-800 text-sky-400 font-mono border border-sky-900">Python</span>
+                    <span class="px-3 py-1.5 rounded bg-slate-800 text-sky-400 font-mono border border-sky-900">JavaScript</span>
+                    <span class="px-3 py-1.5 rounded bg-slate-800 text-sky-400 font-mono border border-sky-900">NodeJS</span>
+                    <span class="px-3 py-1.5 rounded bg-slate-800 text-sky-400 font-mono border border-sky-900">Spring Boot</span>
+                    <span class="px-3 py-1.5 rounded bg-slate-800 text-sky-400 font-mono border border-sky-900">OracleSQL</span>
                 </div>
             </div>
             <div class="card p-6 rounded-lg">
                 <h4 class="text-sky-400 font-bold mb-3">Tools & Cloud</h4>
                 <div class="flex flex-wrap gap-2 text-sm">
-                    <span class="px-3 py-1.5 rounded bg-slate-800 text-sky-400 font-mono border border-sky-900">Git / GitHub [cite: 15]</span>
-                    <span class="px-3 py-1.5 rounded bg-slate-800 text-sky-400 font-mono border border-sky-900">Docker [cite: 15]</span>
-                    <span class="px-3 py-1.5 rounded bg-slate-800 text-sky-400 font-mono border border-sky-900">AWS [cite: 15]</span>
-                    <span class="px-3 py-1.5 rounded bg-slate-800 text-sky-400 font-mono border border-sky-900">JMeter [cite: 20]</span>
-                    <span class="px-3 py-1.5 rounded bg-slate-800 text-sky-400 font-mono border border-sky-900">Antigravity [cite: 15]</span>
+                    <span class="px-3 py-1.5 rounded bg-slate-800 text-sky-400 font-mono border border-sky-900">Git / GitHub</span>
+                    <span class="px-3 py-1.5 rounded bg-slate-800 text-sky-400 font-mono border border-sky-900">Docker</span>
+                    <span class="px-3 py-1.5 rounded bg-slate-800 text-sky-400 font-mono border border-sky-900">AWS</span>
+                    <span class="px-3 py-1.5 rounded bg-slate-800 text-sky-400 font-mono border border-sky-900">JMeter</span>
+                    <span class="px-3 py-1.5 rounded bg-slate-800 text-sky-400 font-mono border border-sky-900">Scrum</span>
                 </div>
             </div>
         </div>
@@ -69,7 +69,7 @@
 
     <section class="mb-16">
         <h2 class="text-2xl font-bold mb-6 border-b border-slate-700 pb-2">Proyecto Destacado</h2>
-        <div class="card p-8 rounded-xl relative">
+        <div class="card p-8 rounded-xl">
             <div class="flex justify-between items-start mb-4">
                 <h3 class="text-2xl font-bold text-sky-400">Agentic IA - UTSI (UCB) [cite: 22]</h3>
                 <span class="text-xs bg-sky-900 text-sky-200 px-3 py-1 rounded">2026</span>
@@ -78,19 +78,18 @@
                 Plataforma de automatización para la generación de consultas en la plataforma SIAAN con enfoque RAG[cite: 26]. 
                 Desarrollado en la Unidad de Tecnologías de Información de la UCB[cite: 17].
             </p>
-            <h5 class="text-sky-300 font-bold mb-3">Impacto Cuantificable:</h5>
+            <h5 class="text-sky-300 font-bold mb-3">Resultados Clave:</h5>
             <ul class="list-disc list-inside text-slate-300 space-y-2 mb-8">
-                <li>Reducción del <strong class="text-sky-400">40%</strong> en tiempo de codificación manual de consultas[cite: 18].</li>
-                <li>Implementación de gestión de Skills mediante reglas expertas[cite: 27].</li>
-                <li>Reducción del <strong class="text-sky-400">30%</strong> en latencia mediante vistas persistentes[cite: 19].</li>
-                <li>Soporte validado para <strong class="text-sky-400">+500</strong> usuarios concurrentes con JMeter[cite: 20].</li>
+                <li>Reducción del <strong class="text-sky-400">40%</strong> en tiempo de codificación manual[cite: 18].</li>
+                <li>Reducción del <strong class="text-sky-400">30%</strong> en latencia de respuesta[cite: 19].</li>
+                <li>Soporte para <strong class="text-sky-400">+500</strong> usuarios concurrentes validado con JMeter[cite: 20].</li>
             </ul>
             <div class="flex gap-4">
                 <a href="https://github.com/JonathanELPRO/AgenticIA" target="_blank" class="inline-block bg-sky-600 hover:bg-sky-500 text-white font-bold py-2 px-6 rounded-lg transition">
                     Ver Repositorio <i class="fas fa-external-link-alt ml-2"></i>
                 </a>
-                <button class="btn-disabled font-bold py-2 px-6 rounded-lg">
-                    Arquitectura (Próximamente) <i class="fas fa-lock ml-2"></i>
+                <button disabled class="btn-disabled font-bold py-2 px-6 rounded-lg flex items-center gap-2">
+                    <i class="fas fa-lock text-sm"></i> Arquitectura
                 </button>
             </div>
         </div>
