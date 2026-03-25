@@ -7,11 +7,13 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap');
         body { background-color: #0f172a; color: #f8fafc; font-family: 'Inter', sans-serif; }
         .gradient-text { background: linear-gradient(90deg, #38bdf8, #818cf8); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
-        .card { background: #1e293b; border: 1px solid #334155; transition: transform 0.3s ease; }
-        .card:hover { transform: translateY(-5px); border-color: #38bdf8; }
+        .card { background: #1e293b; border: 1px solid #334155; transition: all 0.3s ease; }
+        .card:hover { transform: translateY(-5px); border-color: #38bdf8; box-shadow: 0 10px 30px -15px rgba(56, 189, 248, 0.3); }
         .btn-disabled { background-color: #1e293b; color: #64748b; cursor: not-allowed; border: 1px solid #334155; opacity: 0.6; }
+        .tech-tag { @apply px-3 py-1.5 rounded bg-slate-800 font-mono border text-sm; }
     </style>
 </head>
 <body class="p-6 md:p-12 lg:p-24 max-w-5xl mx-auto">
@@ -22,45 +24,71 @@
             <p class="text-xl text-slate-400 mb-6">Software Engineer | Backend Developer | AI Integrator</p>
             <p class="text-slate-500 mb-4"><i class="fas fa-map-marker-alt mr-2"></i> Cochabamba, Bolivia</p>
             <div class="flex gap-4 text-3xl">
-                <a href="https://github.com/JonathanELPRO" target="_blank" class="hover:text-sky-400" title="GitHub"><i class="fab fa-github"></i></a>
-                <a href="https://www.linkedin.com/in/jonathan-moruno-terán-4257373b8/" target="_blank" class="hover:text-sky-400" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
-                <a href="mailto:moruno.teran.jonathan@gmail.com" class="hover:text-sky-400" title="Enviar Correo"><i class="fas fa-envelope"></i></a>
+                <a href="https://github.com/JonathanELPRO" target="_blank" class="hover:text-sky-400 transition" title="GitHub"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/jonathan-moruno-terán-4257373b8/" target="_blank" class="hover:text-sky-400 transition" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                <a href="mailto:moruno.teran.jonathan@gmail.com" class="hover:text-sky-400 transition" title="Enviar Correo"><i class="fas fa-envelope"></i></a>
             </div>
         </div>
-        </header>
+    </header>
 
     <section class="mb-16">
         <h2 class="text-2xl font-bold mb-4 border-b border-slate-700 pb-2">Sobre mí</h2>
         <p class="text-lg text-slate-300 leading-relaxed">
-            Estudiante de Ingeniería de Sistemas con 5 años de experiencia en desarrollo Backend y arquitectura de software. 
-            Especializado en optimización de SQL e implementación de soluciones de IA (Text-to-SQL) con JavaScript, OracleSQL y frameworks de soporte RAG. 
-            He liderado la automatización de consultas bajo metodología Scrum, incrementando la eficiencia operativa y la escalabilidad de la base de datos de la UCB.
+            Estudiante de Ingeniería de Sistemas con experiencia en desarrollo Fullstack y arquitectura de software. Especializado en optimización de SQL e implementación de soluciones de IA (Text-to-SQL). Poseo un fuerte dominio en el ecosistema JavaScript (Node/React) y Java (Spring Boot), además de experiencia en el despliegue de aplicaciones móviles con Kotlin y gestión de entornos Cloud (AWS/Supabase). He liderado la automatización de consultas bajo metodología Scrum, incrementando la eficiencia operativa y la escalabilidad de la base de datos de la UCB.
         </p>
     </section>
 
     <section class="mb-16">
         <h2 class="text-2xl font-bold mb-6 border-b border-slate-700 pb-2">Technical Stack</h2>
         <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            
             <div class="card p-6 rounded-lg">
-                <h4 class="text-sky-400 font-bold mb-3">Languages & Frameworks</h4>
-                <div class="flex flex-wrap gap-2 text-sm">
+                <h4 class="text-sky-400 font-bold mb-4"><i class="fas fa-code mr-2"></i>Lenguajes y Frameworks</h4>
+                <div class="flex flex-wrap gap-2">
+                    <span class="px-3 py-1.5 rounded bg-slate-800 text-sky-400 font-mono border border-sky-900">SQL</span>
                     <span class="px-3 py-1.5 rounded bg-slate-800 text-sky-400 font-mono border border-sky-900">Python</span>
                     <span class="px-3 py-1.5 rounded bg-slate-800 text-sky-400 font-mono border border-sky-900">JavaScript</span>
-                    <span class="px-3 py-1.5 rounded bg-slate-800 text-sky-400 font-mono border border-sky-900">NodeJS</span>
-                    <span class="px-3 py-1.5 rounded bg-slate-800 text-sky-400 font-mono border border-sky-900">Spring Boot</span>
-                    <span class="px-3 py-1.5 rounded bg-slate-800 text-sky-400 font-mono border border-sky-900">OracleSQL</span>
+                    <span class="px-3 py-1.5 rounded bg-slate-800 text-sky-400 font-mono border border-sky-900">Kotlin</span>
+                    <span class="px-3 py-1.5 rounded bg-slate-800 text-sky-400 font-mono border border-sky-900">C++ / C#</span>
+                    <span class="px-3 py-1.5 rounded bg-slate-800 text-indigo-400 font-mono border border-indigo-900">Spring Boot</span>
+                    <span class="px-3 py-1.5 rounded bg-slate-800 text-indigo-400 font-mono border border-indigo-900">React.js</span>
+                    <span class="px-3 py-1.5 rounded bg-slate-800 text-indigo-400 font-mono border border-indigo-900">Angular</span>
+                    <span class="px-3 py-1.5 rounded bg-slate-800 text-indigo-400 font-mono border border-indigo-900">Node.js</span>
                 </div>
             </div>
+
             <div class="card p-6 rounded-lg">
-                <h4 class="text-sky-400 font-bold mb-3">Tools & Cloud</h4>
-                <div class="flex flex-wrap gap-2 text-sm">
+                <h4 class="text-sky-400 font-bold mb-4"><i class="fas fa-database mr-2"></i>Bases de Datos y Cloud</h4>
+                <div class="flex flex-wrap gap-2">
+                    <span class="px-3 py-1.5 rounded bg-slate-800 text-emerald-400 font-mono border border-emerald-900">MySQL</span>
+                    <span class="px-3 py-1.5 rounded bg-slate-800 text-emerald-400 font-mono border border-emerald-900">Oracle</span>
+                    <span class="px-3 py-1.5 rounded bg-slate-800 text-emerald-400 font-mono border border-emerald-900">MongoDB</span>
+                    <span class="px-3 py-1.5 rounded bg-slate-800 text-orange-400 font-mono border border-orange-900">AWS</span>
+                    <span class="px-3 py-1.5 rounded bg-slate-800 text-orange-400 font-mono border border-orange-900">Supabase</span>
+                    <span class="px-3 py-1.5 rounded bg-slate-800 text-slate-400 font-mono border border-slate-700">Infraestructura de Redes</span>
+                </div>
+            </div>
+
+            <div class="card p-6 rounded-lg">
+                <h4 class="text-sky-400 font-bold mb-4"><i class="fas fa-brain mr-2"></i>IA y Desarrollo Especializado</h4>
+                <div class="flex flex-wrap gap-2">
+                    <span class="px-3 py-1.5 rounded bg-slate-800 text-fuchsia-400 font-mono border border-fuchsia-900">Machine Learning</span>
+                    <span class="px-3 py-1.5 rounded bg-slate-800 text-fuchsia-400 font-mono border border-fuchsia-900">Deep Learning</span>
+                    <span class="px-3 py-1.5 rounded bg-slate-800 text-sky-400 font-mono border border-sky-900">Android (Kotlin)</span>
+                    <span class="px-3 py-1.5 rounded bg-slate-800 text-sky-400 font-mono border border-sky-900">APIs REST</span>
+                </div>
+            </div>
+
+            <div class="card p-6 rounded-lg">
+                <h4 class="text-sky-400 font-bold mb-4"><i class="fas fa-tools mr-2"></i>Herramientas y Metodología</h4>
+                <div class="flex flex-wrap gap-2">
                     <span class="px-3 py-1.5 rounded bg-slate-800 text-sky-400 font-mono border border-sky-900">Git / GitHub</span>
                     <span class="px-3 py-1.5 rounded bg-slate-800 text-sky-400 font-mono border border-sky-900">Docker</span>
-                    <span class="px-3 py-1.5 rounded bg-slate-800 text-sky-400 font-mono border border-sky-900">AWS</span>
-                    <span class="px-3 py-1.5 rounded bg-slate-800 text-sky-400 font-mono border border-sky-900">JMeter</span>
-                    <span class="px-3 py-1.5 rounded bg-slate-800 text-sky-400 font-mono border border-sky-900">Scrum</span>
+                    <span class="px-3 py-1.5 rounded bg-slate-800 text-sky-400 font-mono border border-sky-900">Antigravity</span>
+                    <span class="px-3 py-1.5 rounded bg-slate-800 text-yellow-500 font-mono border border-yellow-900">Scrum (Agile)</span>
                 </div>
             </div>
+
         </div>
     </section>
 
@@ -72,8 +100,7 @@
                 <span class="text-xs bg-sky-900 text-sky-200 px-3 py-1 rounded">2026</span>
             </div>
             <p class="text-slate-400 mb-6 leading-relaxed">
-                Plataforma de automatización para la generación de consultas en la plataforma SIAAN con enfoque RAG. 
-                Desarrollado en la Unidad de Tecnologías de Información de la UCB.
+                Plataforma de automatización para la generación de consultas en la plataforma SIAAN con enfoque RAG. Desarrollado en la Unidad de Tecnologías de Información de la UCB.
             </p>
             <h5 class="text-sky-300 font-bold mb-3">Resultados Clave:</h5>
             <ul class="list-disc list-inside text-slate-300 space-y-2 mb-8">
